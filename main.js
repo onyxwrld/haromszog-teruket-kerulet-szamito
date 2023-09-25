@@ -29,7 +29,12 @@ function teruleteskeruletszamit()
             {
             const s = this.kerulet() / 2;
             return Math.sqrt(s*(s-this.a) * (s - this.b)* (s - this.c));
+            },
+            keruletEsTeruletSzoveges: function() {
+                return `Kerület: ${this.kerulet()} - Terület ${this.terulet()}`;
             }
         };
+        console.log(haromszog);
+        eredmeny.textContent = haromszog.keruletEsTeruletSzoveges();
     }
 }
